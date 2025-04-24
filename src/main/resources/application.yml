@@ -1,1 +1,10 @@
-spring.application.name=Kafka-App
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+app:
+  kafka:
+    orderEventGroupId: "order-event-group-id"
+    orderEventTopic: "order-event-topic"
+    orderStatusEventGroupId: "order-status-event-group-id"
+    orderStatusEventTopic: "order-status-event-topic"
